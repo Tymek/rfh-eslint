@@ -3,6 +3,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form'
 import './App.css';
 
+type FormProps = {
+  username: string
+}
+
 function App() {
   const { register } = useForm<FormProps>()
 
