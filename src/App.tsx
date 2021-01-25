@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <input ref={register()} name="username" data-testid="input" />
+        <input {...register('username')} data-testid="input" />
       </header>
     </div>
   );
