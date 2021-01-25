@@ -27,7 +27,13 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "@typescript-eslint/unbound-method": "error"
+    }
   },
   "browserslist": {
     "production": [
